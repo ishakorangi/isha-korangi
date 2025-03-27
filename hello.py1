@@ -1,0 +1,3 @@
+rate = 0.93
+amount_usd = float(input("Enter your amount in usd"))
+amount_euro = 
