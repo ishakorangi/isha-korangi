@@ -1,12 +1,15 @@
-correct_city = "Tokyo"
-attempt = 0
-max_attempt = 5
-input_city = ""
+attempts = 0
+correct_answer = "Tokyo"
 
-while True:
-     capital = input("What is your capital city of Japan?\n")
-     if (capital == "tokyo"):
-      print("you are correct")
-      break
-     else :
-      print("you are not correct")
+while attempts < 5:
+    answer = input("What is the capital city of Japan? ")
+
+    if answer == correct_answer:
+        print("Correct! Well done.")
+        break
+
+    attempts += 1
+    print(f"Wrong answer. You have {5 - attempts} attempts left.")
+
+if attempts == 5:
+    print("Sorry, you've used all attempts. The correct answer is Tokyo.")
